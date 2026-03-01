@@ -1,3 +1,9 @@
+import ResizeObserver from "resize-observer-polyfill";
+
+if (!window.ResizeObserver) {
+  window.ResizeObserver = ResizeObserver;
+}
+
 import { useState, useEffect, useRef, useCallback, useMemo, memo } from "react";
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer,
