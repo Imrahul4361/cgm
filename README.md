@@ -59,7 +59,7 @@ A real‑time, high‑fidelity digital twin simulation of a mechanical ventilato
 ---
 
 
-🎮 How to Use
+##🎮 How to Use
 Select a Patient Profile from the sidebar (Healthy Adult, Neonatal, etc.). Each profile has pre‑configured lung mechanics (compliance, resistance).
 
 Adjust Ventilator Settings:
@@ -102,7 +102,7 @@ Blockchain Ledger: Click the “LEDGER” button to view a simulated immutable c
 
 Export Data: Click “CSV” to download trend data.
 
-📁 Project Structure
+##📁 Project Structure
 text
 ventilator-digital-twin/
 ├── public/
@@ -119,14 +119,14 @@ ventilator-digital-twin/
 
 Currently, all code is in a single App.js for simplicity. In a production project, you might refactor into smaller modules.
 
-🔧 Customisation
+##🔧 Customisation
 Adding new patient profiles: Extend the PATIENTS constant in App.js with appropriate lung parameters (C, R, color).
 
 Modifying alarm thresholds: Update the ALIM constant.
 
 Adding fault types: Extend DEFAULT_FAULTS and add corresponding logic in the engine (_updateSensor, etc.).
 
-🧪 Testing
+##🧪 Testing
 No formal test suite is included yet. You can manually test by:
 
 Changing patient profiles and verifying that waveforms adjust appropriately.
@@ -135,12 +135,6 @@ Injecting faults and ensuring alarms trigger as expected.
 
 Checking that all UI components render correctly in both dark and light themes.
 
-📄 License
+##📄 License
 This project is provided for educational and demonstration purposes. All rights reserved. For commercial use, please contact the author.
 
-🙏 Acknowledgments
-Physiological models based on: Bates, J. H. T. Lung Mechanics: An Inverse Modeling Approach. Cambridge University Press, 2017.
-
-Standards references: IEC 60601‑1, ISO 80601‑2‑12, IEC 62304, etc.
-
-UI design inspired by premium medical devices.
